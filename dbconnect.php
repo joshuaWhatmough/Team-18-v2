@@ -1,4 +1,4 @@
 <?php
 try {
 $dbh= new PDO("sqlite:database.sqlite");
-} catch(PDOException $e){echo "$e->getMessage";} ?>
+} catch(PDOException $e){echo $e->getMessage;} ?>

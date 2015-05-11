@@ -25,51 +25,7 @@ print_r($_REQUEST);
 
 if($_REQUEST["submit"] == "Create Artist") {
     
-    
-//    $targetDir = "images/";
-//    echo "test1";
-//    $targetFile = $targetDir . basename($_FILES["artistImage"]["name"]);
-//    echo "test2 : $targetFile";
-//    $uploadOk = 1;
-//    $imageFileType = pathinfo($targetFile,PATHINFO_EXTENSION);
-//    echo "test3";
-//    // Check if the image file is an actual image or a fake.
-//    if(isset($_POST["submit"])) {
-//        $check = getimagesize($_FILES["artistImage"]["tmp_name"]);
-//        echo "test4";
-//        if($check !== false){
-//        echo "File is an image - " . $check["mime"] . ".";
-//        $uploadOk = 1;
-//    } else {
-//        echo "File is not an image.";
-//        $uploadOk = 0;    
-//    }
-//        echo "test5";
-//    }
-//    // Check if file already exists.
-//    if (file_exists($targetFile)){
-//        echo "Sorry, your file already exists";
-//        $uploadOk = 0;
-//    }
-//    // Check file size.
-//    if ($_FILES["artistImage"]["size"] > 500000){
-//        echo "Sorry, your file is too large";
-//        $uploadOk = 0;
-//    }
-//    // Allow certain file formats
-//    if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif"){
-//        echo "Sorry, only JPG, JPEG, PNG and GIF files are allowed";
-//    }
-//    // Check if $uploadOk is set to 0 by an error.
-//    if ($uploadOk == 0){
-//        echo "Sorry, your file was not uploaded";
-//    }else {
-//        if(move_uploaded_file($_FILES["artistImage"]["tmp_name"],$targetFile)){
-//            echo "The file " . basename($_FILES["artistImage"]["name"]) . " has been uploaded.";
-//        }else {
-//            echo "Sorry, there was error uploading your file";
-//        }
-//    }
+    // TO-DO insert upload images code.
     
     
     
@@ -101,6 +57,25 @@ if ($_REQUEST["submit"] == "Delete Artist"){
         echo "<a href='index.php'>Back</a>";
     }else{
         echo "Sorry, the delete request was not submitted.";
+    }
+}
+
+if($_REQUEST["submit"] == "Login") {
+    $sql = "SELECT * FROM Members WHERE username = $_REQUEST[username];";
+    $isLoginOk = false;
+    foreach($dbh->query($sql) as $row){
+        if ($_REQUEST[password] == $row[password]){
+            $isLoginOk = true;
+        }
+        if ($isLoginOk == true){
+            $session_start();
+            $_SESSION[username] = $_REQUEST[username];
+            $_SESSION[password] = $_REQUEST[password];
+            echo "Login Succeeded<br><a href='index.php'>Back</a>";
+        }
+    }
+    if ($isLoginOk == false){
+        echo "No user found.";
     }
 }
 

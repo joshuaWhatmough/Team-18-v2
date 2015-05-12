@@ -1,4 +1,6 @@
-<?php session_start()?>
+<?php
+session_set_cookie_params(0);
+session_start();?>
 <html>
 <head>
     <title>Home</title>
@@ -9,6 +11,7 @@
     include "inc_nav.php";
     include "inc_loginArea.php";
     echo "$_SESSION[username]";
+
     ?>
     </body>
 </html>

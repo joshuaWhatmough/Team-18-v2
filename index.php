@@ -1,5 +1,5 @@
 <?php
-session_start()
+session_start();
 $_SESSION[username] = "null";
 $_SESSION[password] = "null";
 ?>

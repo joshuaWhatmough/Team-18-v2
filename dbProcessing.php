@@ -63,19 +63,19 @@ if($_REQUEST["submit"] == "Login") {
     $sql = "SELECT * FROM Members WHERE username = '$_REQUEST[username]';";
     $results = $dbh->query($sql);
     print_r($results);
-//    if(isset($results)){
-//    foreach($results as $row){
-//        if ($_REQUEST[password] == $row[password]){
-//            $isLoginOk = true;
-//        }
-//        if ($isLoginOk == true){
-//            $session_start();
-//            $_SESSION[username] = $_REQUEST[username];
-//            $_SESSION[password] = $_REQUEST[password];
-//            echo "Login Succeeded<br><a href='index.php'>Back</a>";
-//        }
-//    }
-//    }
+    if(isset($results)){
+    foreach($results as $row){
+        if ($_REQUEST[password] == $row[password]){
+            $isLoginOk = true;
+        }
+        if ($isLoginOk == true){
+            $session_start();
+            $_SESSION[username] = $_REQUEST[username];
+            $_SESSION[password] = $_REQUEST[password];
+            echo "Login Succeeded<br><a href='index.php'>Back</a>";
+        }
+    }
+    }
     if ($isLoginOk == false){
         echo "No user found.";
     }

@@ -9,6 +9,7 @@ $_SESSION[password] = "null";
     <style type="text/css" src=""></style>
     </head>
 <body>
+    Hello world
     <?php 
     include "inc_nav.php";
     include "inc_loginArea.php";

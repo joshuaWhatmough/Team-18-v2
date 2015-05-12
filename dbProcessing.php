@@ -69,7 +69,6 @@ if($_REQUEST["submit"] == "Login") {
             $isLoginOk = true;
         }
         if ($isLoginOk == true){
-            session_start();
             $_SESSION[username] = $_REQUEST[username];
             $_SESSION[password] = $_REQUEST[password];
             echo "Login Succeeded<br><a href='index.php'>Back</a>";

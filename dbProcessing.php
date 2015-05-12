@@ -1,4 +1,6 @@
-<?php include "dbconnect.php";?>
+<?php 
+error_reporting(E_ALL);
+include "dbconnect.php";?>
 <?php 
 
 if ($_REQUEST["submit"] == "Sign Up") {
@@ -65,12 +67,12 @@ if($_REQUEST["submit"] == "Login") {
     print_r($results);
     if(isset($results)){
     foreach($results as $row){
-        if ($_REQUEST[password] == $row[password]){
+        if ($_REQUEST['password'] == $row['password']){
             $isLoginOk = true;
         }
-        if ($isLoginOk == true){
-            $_SESSION[username] = $_REQUEST[username];
-            $_SESSION[password] = $_REQUEST[password];
+        if ($isLoginOk){
+            $_SESSION['username'] = $_REQUEST['username'];
+            $_SESSION['password'] = $_REQUEST['password'];
             echo "Login Succeeded<br><a href='index.php'>Back</a>";
         }
     }
@@ -79,5 +81,5 @@ if($_REQUEST["submit"] == "Login") {
         echo "No user found.";
     }
 }
-
+print_r($_REQUEST);
 ?>

@@ -21,7 +21,7 @@ if($_REQUEST["submit"] == "Delete"){
 
 }
 
-print_r($_REQUEST);
+
 
 if($_REQUEST["submit"] == "Create Artist") {
     
@@ -40,8 +40,6 @@ if($_REQUEST["submit"] == "Create Artist") {
         echo "Sorry, the new entry was not submitted.";
     }
 }
-else
-    echo "not artist";
 
 
 if($_REQUEST["submit"] == "Update Artist") {

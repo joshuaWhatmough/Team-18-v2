@@ -11,7 +11,7 @@ session_start();?>
     include "inc_nav.php";
     include "inc_loginArea.php";
     echo "$_SESSION[username]";
-
+    include "inc_logout.php";
     ?>
     </body>
 </html>

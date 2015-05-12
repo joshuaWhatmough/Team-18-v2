@@ -59,9 +59,11 @@ if ($_REQUEST["submit"] == "Delete Artist"){
 }
 
 if($_REQUEST["submit"] == "Login") {
-    $sql = "SELECT * FROM Members WHERE username = $_REQUEST[username];";
     $isLoginOk = false;
-    foreach($dbh->query($sql) as $row){
+    $sql = "SELECT * FROM Members WHERE username = $_REQUEST[username];";
+    $results = $dbh->query($sql);
+    if(isset($results)){
+    foreach($results as $row){
         if ($_REQUEST[password] == $row[password]){
             $isLoginOk = true;
         }
@@ -71,6 +73,7 @@ if($_REQUEST["submit"] == "Login") {
             $_SESSION[password] = $_REQUEST[password];
             echo "Login Succeeded<br><a href='index.php'>Back</a>";
         }
+    }
     }
     if ($isLoginOk == false){
         echo "No user found.";

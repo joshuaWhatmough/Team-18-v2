@@ -31,6 +31,12 @@ body {
     color: #FFF;
 }
 
+.musos > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 footer {
 	background-color: #000;
 	color: #FFF;
@@ -52,6 +58,7 @@ footer {
 	padding-top: 15px;
 	padding-bottom: 5px;
 	padding-left: 35px;
+    color: #000;
 }
 
 .content > h1 {
@@ -65,9 +72,9 @@ footer {
 }
 
 .musos {
-	padding-top: 20px;
-	padding-bottom: 0px;
-	padding-left: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
 	padding-right: 20px;
     margin-left: 10px;
     margin-right: 10px;
@@ -75,10 +82,8 @@ footer {
 	background-color: #000;
 	opacity: 0.8;
 	color: inherit;
-    max-width: 45%;
-    min-width: 400px;
+    width: 45%;
     display: inline-block;
-	
 }
 
 .sponsor {

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (min-width: 45em) {
+@media (min-width: 450px) {
     .m-2col {width: 100%;}
     .m-1col {width: 48%;}
     .col:nth-child(2) {margin-right: 0;}
@@ -57,7 +57,7 @@ footer {
 
 .container {
 	max-width: 100%;
-	min-width: 800px;
+	min-width: 550px;
 	background-color: #FFF;
     color: #000;
     font-family: "Verdana", Times, serif;
@@ -80,7 +80,7 @@ footer {
 	text-align: left;
 }
 
-.musos2 {
+.musos {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 3%;
@@ -111,21 +111,6 @@ footer {
 }
 .events {
     padding-top: 5px;
-	padding-bottom: 5px;
-	padding-left: 3%;
-	padding-right: 3%;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 15px;
-	background-color: #000;
-    color: #FFF;
-	opacity: 0.8;
-    width: 41.5%;
-    display: inline-block;
-}
-
-.musos1 {
-	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 3%;
 	padding-right: 3%;

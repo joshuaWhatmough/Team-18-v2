@@ -21,7 +21,7 @@
     </form>
     <form method="post" action="dbProcessing.php" id="createArtist">
     Artist Name: <input type="text" name="artistName"><br>
-    Image: <input type="file" name="artistImage"><br>
+    Image: <input type="file" name="imagefile"><br>
     <textarea name="artistInfo" form="createArtist">Enter text here...</textarea><br>
     <input type="submit" name="submit" value="Create Artist">
     </form>

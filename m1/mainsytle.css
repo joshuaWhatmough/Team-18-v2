@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (min-width: 450px) {
+@media screen and (max-width: 300px) {
     .m-2col {width: 48%;}
     .m-1col {width: 100%;}
     .col: nth-child(2) {margin-right: 0;}
@@ -9,6 +9,7 @@
 header {
 	background-color:#000;
 	color: #FFF;
+    font-size: 20px;
 }
 
 nav {
@@ -155,6 +156,7 @@ footer {
     color: #FFF;
     width: 41.5%;
     display: inline-block;
+    float: left;
 }
 
 .sponsor {

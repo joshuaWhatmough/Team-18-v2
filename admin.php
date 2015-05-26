@@ -19,9 +19,9 @@
         echo "<input type='submit' name='submit' value='Update' /><input type='submit' name='submit' value='Delete' /><br>";
     } ?>
     </form>
-    <form method="post" action="dbProcessing.php" id="createArtist">
+    <form method="post" action="dbProcessing.php" id="createArtist" enctype="multipart/form-data">
     Artist Name: <input type="text" name="artistName"><br>
-    Image: <input type="file" name="artistImage"><br>
+    Image: <input type="file" name="imagefile" id="imagefile" /><br>
     <textarea name="artistInfo" form="createArtist">Enter text here...</textarea><br>
     <input type="submit" name="submit" value="Create Artist">
     </form>

@@ -41,7 +41,8 @@ body {
 .musos > img {
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 5px;
+    float: left;
 }
 
 a img {
@@ -72,7 +73,7 @@ footer {
 	margin-right:auto;
 }
 
-#content {
+.content {
 	width: inherit .container;
 	height:750px;
 	padding-top: 10px;
@@ -84,7 +85,7 @@ footer {
 	background-color:White;
 }
 
-#content > h1 {
+.content > h1 {
 	font-size: 20px;
 	text-align: center;
 }
@@ -96,9 +97,9 @@ footer {
 
 
 #content p {
-	float:left;
-	margin:10px;
-	text-align:justify;
+	float: left;
+	margin: 10px;
+	text-align: justify;
 }
 
 #content img {
@@ -106,42 +107,14 @@ footer {
 	margin-right: 116px;
 }
 
-#para1 {
-	height:200px;
-	width:300px;
-	margin:20px 20px 20px 20px;
+.para {
+    background-color: #3F3C3F;
+    color: #FFF;
+    height: 200px;
+    width: 300px;
+    margin: 20px 20px 20px 20px;
+    padding: 5px 5px 5px 5px;
     float: left;
-}
-
-#para2 {
-	height:200px;
-	width:300px;
-	margin:20px 20px 20px 20px;
-    float: left;
-}
-
-#para3 {
-	height:200px;
-	width:300px;
-	margin:20px 20px 20px 20px;
-    float: left;
-}
-
-#para4 {
-	height:200px;
-	width:300px;
-	margin:20px 20px 20px 20px;
-    float: left;
-}
-
-#image1{
-	clear:both;
-}
-
-#image2{
-	clear:both;
-    margin-left: auto;
-
 }
 
 .musos {
@@ -193,11 +166,12 @@ footer {
 }
 
 .content_home {
-    width: 60%;
+    width: inherit .container;
 	height: 750px;
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-bottom: 5px;
+    background-color: #3F3C3F;
     color: #000;
 	margin-left: auto;
 	margin-right: auto;
@@ -209,4 +183,10 @@ a > img {
     display: block;
     margin-right: auto;
     margin-left: auto;
+}
+
+.content_home > img {
+    float: left;
+    margin: 5px 5px 5px 5px;
+    
 }

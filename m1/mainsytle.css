@@ -35,7 +35,7 @@ nav a:hover, nav a:active, nav a:focus {
 body {
 	background-color: #FFF;
     align-items: center;
-    color: #000;
+    color: #FFF;
 }
 
 .musos > img {
@@ -57,6 +57,7 @@ footer {
 	padding-top: 20px;
 	padding-bottom: 10px;
 	padding-left: 25px;
+    border-radius: 0px 0px 15px 15px;
     width: inherit .container;
     overflow: auto;
     float: left;
@@ -75,14 +76,14 @@ footer {
 
 .content {
 	width: inherit .container;
-	height:750px;
+	height: 750px;
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-bottom: 5px;
     color: #000;
-	margin-left:auto;
-	margin-right:auto;
-	background-color:White;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFF;
 }
 
 .content > h1 {
@@ -90,28 +91,29 @@ footer {
 	text-align: center;
 }
 
-#content > p {
+.content_home > p {
 	font-size: 18px;
 	text-align: left;
 }
 
 
-#content p {
+.content_home p {
 	float: left;
 	margin: 10px;
 	text-align: justify;
 }
 
-#content img {
+.content_home img {
 	float: left;
 	margin-right: 116px;
+    border-radius: 25px 25px 25px 25px;
 }
 
 .para {
-    background-color: #3F3C3F;
+    background-color: #1D1F25;
     color: #FFF;
-    height: 200px;
-    width: 300px;
+    height: auto;
+    width: 30%;
     margin: 20px 20px 20px 20px;
     padding: 5px 5px 5px 5px;
     float: left;
@@ -171,11 +173,18 @@ footer {
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-bottom: 5px;
+    color: #FFF;
     background-color: #3F3C3F;
-    color: #000;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #FFF;
+}
+
+.content_home > h1 {
+    text-align: center;
+}
+
+.content_home > h2 {
+    text-align: center;
 }
 
 a > img {

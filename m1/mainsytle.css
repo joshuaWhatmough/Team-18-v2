@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 450px) {
+@media (min-width: 450px) {
     .m-2col {width: 48%;}
     .m-1col {width: 100%;}
     .col: nth-child(2) {margin-right: 0;}
@@ -34,13 +34,17 @@ nav a:hover, nav a:active, nav a:focus {
 body {
 	background-color: #FFF;
     align-items: center;
-    color: #FFF;
+    color: #000;
 }
 
 .musos > img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+a img {
+    align-content: center;
 }
 
 footer {
@@ -53,31 +57,90 @@ footer {
 	padding-left: 25px;
     width: inherit .container;
     overflow: auto;
+    float: left;
 }
 
 .container {
 	max-width: 100%;
-	min-width: 550px;
+	min-width: 800px;
+	height:750px;
 	background-color: #FFF;
     color: #000;
     font-family: "Verdana", Times, serif;
+	margin-left:auto;
+	margin-right:auto;
 }
 
-.content {
-	padding-top: 15px;
+#content {
+	width: inherit .container;
+	height:750px;
+	padding-top: 10px;
+	padding-left: 10px;
 	padding-bottom: 5px;
-	padding-left: 35px;
     color: #000;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:White;
 }
 
-.content > h1 {
+#content > h1 {
 	font-size: 20px;
 	text-align: center;
 }
 
-.content > p {
+#content > p {
 	font-size: 18px;
 	text-align: left;
+}
+
+
+#content p {
+	float:left;
+	margin:10px;
+	text-align:justify;
+}
+
+#content img {
+	float: left;
+	margin-right: 116px;
+}
+
+#para1 {
+	height:200px;
+	width:300px;
+	margin:20px 20px 20px 20px;
+    float: left;
+}
+
+#para2 {
+	height:200px;
+	width:300px;
+	margin:20px 20px 20px 20px;
+    float: left;
+}
+
+#para3 {
+	height:200px;
+	width:300px;
+	margin:20px 20px 20px 20px;
+    float: left;
+}
+
+#para4 {
+	height:200px;
+	width:300px;
+	margin:20px 20px 20px 20px;
+    float: left;
+}
+
+#image1{
+	clear:both;
+}
+
+#image2{
+	clear:both;
+    margin-left: auto;
+
 }
 
 .musos {
@@ -88,9 +151,8 @@ footer {
     margin-left: 1%;
     margin-right: 1%;
     margin-bottom: 15px;
-	background-color: #000;
+	background-color: #3F3C3F;
     color: #FFF;
-	opacity: 0.8;
     width: 41.5%;
     display: inline-block;
 }
@@ -120,7 +182,29 @@ footer {
     margin-bottom: 15px;
 	background-color: #000;
     color: #FFF;
-	opacity: 0.8;
+    background-color: #3F3C3F;
     width: 41.5%;
     display: inline-block;
+}
+.headertitle {
+    vertical-align: center;
+}
+
+.content_home {
+    width: 60%;
+	height: 750px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+    color: #000;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFF;
+}
+
+a > img {
+    align-content: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }

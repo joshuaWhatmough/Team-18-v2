@@ -21,7 +21,11 @@
     </form>
     <form method="post" action="dbProcessing.php" id="createArtist" enctype="multipart/form-data">
     Artist Name: <input type="text" name="artistName"><br>
+<<<<<<< HEAD
     Image: <input type="file" name="imagefile" id="imagefile" /><br>
+=======
+    Image: <input type="file" name="imagefile"><br>
+>>>>>>> 0640df290c64f8d08d5cf63f6e9735c919eaed57
     <textarea name="artistInfo" form="createArtist">Enter text here...</textarea><br>
     <input type="submit" name="submit" value="Create Artist">
     </form>

@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-@media (min-width: 450px) {
-    .m-2col {width: 100%;}
-    .m-1col {width: 48%;}
-    .col:nth-child(2) {margin-right: 0;}
+@media screen and (min-width: 450px) {
+    .m-2col {width: 48%;}
+    .m-1col {width: 100%;}
+    .col: nth-child(2) {margin-right: 0;}
 }
 
 header {
@@ -15,7 +15,7 @@ nav {
 	background-color: #FFF;
 	text-align: left;
 	padding-top: 15px;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
     padding-left: 25px;
 }
 
@@ -109,6 +109,7 @@ footer {
 	padding-left: 15px;
 	padding-right: 55px;
 }
+
 .events {
     padding-top: 5px;
 	padding-bottom: 5px;
